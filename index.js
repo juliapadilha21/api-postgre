@@ -6,7 +6,7 @@
     const port = process.env.PORT; // recupera a porta definida do .env 
     const express = require("express"); // framework web para lidar com rotas e middlewares
 
-    const app = (express.json()); // instancia a aplicação express
+    const app = express(); // instancia a aplicação express
 
         // middlewarw: instruimos o express a converter automaticamente o corpo das requisões (body) para JSON
     app.use(express.json());
